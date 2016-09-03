@@ -13,9 +13,9 @@ func Pic(dx, dy int) [][]uint8 {
 	//draw
 	for y := range pic {
 		for x := range pic[y] {
-			//pic[y][x] = uint8((x + y) / 2) //cool
-			//pic[y][x] = uint8(x * y)       //nice
-			pic[y][x] = uint8(x ^ y) //wow
+			pic[y][x] = uint8((x + y) / 2) //cool
+			pic[y][x] = uint8(x * y)       //nice
+			pic[y][x] = uint8(x ^ y)       //wow
 		}
 	}
 
